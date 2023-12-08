@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$primary: hsl(172, 67%, 45%);
+$neutral--100: hsl(183, 100%, 15%);
+$neutral--200: hsl(186, 14%, 43%);
+$neutral--300: hsl(184, 14%, 56%);
+$neutral--400: hsl(185, 41%, 84%);
+$neutral--500: hsl(189, 41%, 97%);
+$neutral--600: hsl(0, 0%, 100%);
+
+.app {
+	background-color: $neutral--400;
+}
+
+.tipContainer {
+	background-color: $neutral--600;
+}
+
+.billLabel {
+	color: $neutral--200;
+}
+.billInput {
+	background-color: $neutral--500;
+	color: $neutral--100;
+}
+
+.tipBtn {
+	background-color: $neutral--100;
+	color: $neutral--600;
+	transition: all 0.3s;
+
+	&:hover {
+		background-color: $primary;
+		color: $neutral--100;
+	}
+}
+
+.customTip {
+	background-color: $neutral--500;
+	color: $neutral--200;
+
+	&::placeholder {
+		text-align: center;
+	}
+}
+
+.displayContainer {
+	background-color: $neutral--100;
+
+	& > div > div > h1 {
+		color: $primary;
+	}
+}
+
+.resetBtn {
+	background-color: $primary;
+	color: $neutral--100;
+}
